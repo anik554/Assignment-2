@@ -1,10 +1,168 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 .inter-googleInterFont {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
+  font-variation-settings: "slnt" 0;
+}
+
+@font-face {
+  font-family: "Miama Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../Fonts/Miama-Regular.woff");
+}
+
+@font-face {
+  font-family: "Miama";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../Fonts/Miama.woff");
+}
+
+body {
+  background-color: #000000;
+}
+
+#banner-section {
+  width: 100%;
+  height: 715px;
+  font-family: "Inter", sans-serif;
+  background-color: rgba(17, 17, 17, 1) ;
+  /* border: 1px solid white; */
+}
+.nav-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 46px;
+}
+.nav-section ul li {
+  margin-left: 47px;
+}
+.nav-section ul li:first-child {
+  margin-left: 0;
+}
+.nav-section ul li:last-child {
+  margin-right: 5px;
+}
+.nav-section ul li a {
+  text-decoration: none;
+  font-size: 1.125rem;
+  color: #ffffff;
+}
+.nav-section ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  border: 0.1px solid rgb(88, 87, 87);
+  border-radius: 39px;
+  padding: 6px;
+}
+
+.common-button {
+  width: 92px;
+  height: 38px;
+  border-radius: 46px;
+  background-color: rgba(230, 83, 60, 1);
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border: none;
+}
+
+.common-width {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 57px;
+}
+.common-color {
+  color: rgba(230, 83, 60, 1);
+}
+.brand-name {
+  font-size: 2.25rem;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.bar-icons {
+  display: none;
+}
+
+.title-section {
+  width: 600px;
+  height: 440px;
+  /* border: 1px solid skyblue; */
+}
+.header-section {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin: 96px auto 0 auto;
+}
+.brand-title {
+  font-size: 4.9rem;
+  color: #ffffff;
+  font-weight: 900;
+  margin: 0;
+  line-height: 90px;
+  font-family: "Inter", sans-serif;
+}
+.title-section{
+    width: 520px;
+    height: 440px;
+}
+.brand-title .font-miama {
+  font-family: "Miama Regular";
+  font-size: 4.9rem;
+  font-weight: 400;
+}
+.brand-description{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Inter", sans-serif;
+}
+.brand-button1{
+    width: 224px;
+    height: 54px;
+    border-radius: 42px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    background-color: rgba(230, 83, 60, 1);
+    font-family: "Inter", sans-serif;
+    /* margin: 16px 40px; */
+}
+.brand-button2{
+    width: 224px;
+    height: 54px;
+    border-radius: 42px;
+    font-family: "Inter", sans-serif;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: black;
+    border: 1px solid white;
+    
+    /* border: 1px solid white; */
+    /* background-color: rgba(230, 83, 60, 1); */
+    /* background-color: #000000; */
+    
+    /* margin: 16px 40px; */
+}
+
+@media screen and (max-width: 576px) {
+  .nav-section ul {
+    display: none;
+  }
+  .fa-solid {
+    color: #ffffff;
+    margin-top: 10px;
+  }
+  .nav-section {
+    width: 90%;
+  }
 }
