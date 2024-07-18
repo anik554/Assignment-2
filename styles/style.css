@@ -238,16 +238,14 @@ body {
   }
   .nav-section {
     width: 90%;
-    border: 1px solid white;
   }
   .header-section{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     width: 90%;
-    border: 1px solid white;
   }
   .title-section{
-    width: 70%;
+    width: 80%;
     height: auto;
     
   }
@@ -259,16 +257,18 @@ body {
   .title-button{
     display: flex;
     justify-content: space-between;
-    /* width: 90%; */
   }
   .brand-title .font-miama{
     font-size: 3.25rem;
+    
   }
   .box{
-   display: none;
+   margin: -300px 30px;
+   width: 200px;
   }
   .box2{
-    display: none;
+    margin: -340px 220px;
+    width: 190px;
   }
   .image-section img{
     width: 80%;
