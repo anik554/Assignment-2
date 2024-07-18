@@ -21,23 +21,34 @@
   font-weight: normal;
   src: url("../Fonts/Miama.woff");
 }
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
 
 body {
   background-color: #000000;
+  margin: 0;
+  font-family: "Inter", sans-serif;
 }
 
 #banner-section {
   width: 100%;
-  height: 715px;
-  font-family: "Inter", sans-serif;
-  background-color: rgba(17, 17, 17, 1) ;
-  /* border: 1px solid white; */
+  height: auto;
+  background: linear-gradient(
+    to bottom,
+    rgba(17, 17, 17, 1),
+    rgba(119, 119, 119, 0)
+  );
 }
 .nav-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 46px;
+  width: 70%;
+  
 }
 .nav-section ul li {
   margin-left: 47px;
@@ -74,7 +85,7 @@ body {
 }
 
 .common-width {
-  width: 80%;
+  /* width: 80%; */
   margin: 0 auto;
   margin-top: 57px;
 }
@@ -90,68 +101,94 @@ body {
 .bar-icons {
   display: none;
 }
+.header-section {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  margin: 0 auto;
+}
 
 .title-section {
   width: 600px;
   height: 440px;
   /* border: 1px solid skyblue; */
+  margin-top: 100px;
 }
-.header-section {
-  display: flex;
-  width: 80%;
-  justify-content: space-between;
-  margin: 96px auto 0 auto;
-}
+
 .brand-title {
   font-size: 4.9rem;
   color: #ffffff;
   font-weight: 900;
-  margin: 0;
-  line-height: 90px;
+  line-height: 80px;
   font-family: "Inter", sans-serif;
+  margin: 0px;
 }
-.title-section{
-    width: 520px;
-    height: 440px;
+.image-section img {
+  width: 100%;
+  height: 580px;
+  margin: 32px 24px;
+}
+.ball{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgba(230, 83, 60, 1);
+  position: relative;
+}
+.box{
+  color: #ffffff;
+  width: 206px;
+  height: 96;
+  background: rgba(48, 48, 48, 0.54);
+  margin: -150px 150px 0 950px;
+  z-index: 1;
+  display: block;
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+}
+.title-section {
+  width: 520px;
+  height: 440px;
 }
 .brand-title .font-miama {
   font-family: "Miama Regular";
   font-size: 4.9rem;
   font-weight: 400;
 }
-.brand-description{
-    font-size: 1rem;
-    color: rgba(255, 255, 255, 0.5);
-    font-family: "Inter", sans-serif;
+.brand-description {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 28px 0;
 }
-.brand-button1{
-    width: 224px;
-    height: 54px;
-    border-radius: 42px;
-    color: #ffffff;
-    font-size: 1rem;
-    font-weight: 600;
-    border: none;
-    background-color: rgba(230, 83, 60, 1);
-    font-family: "Inter", sans-serif;
-    /* margin: 16px 40px; */
+.brand-button1 {
+  width: 224px;
+  height: 54px;
+  border-radius: 42px;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  background-color: rgba(230, 83, 60, 1);
+  font-family: "Inter", sans-serif;
+  /* margin: 16px 40px; */
 }
-.brand-button2{
-    width: 224px;
-    height: 54px;
-    border-radius: 42px;
-    font-family: "Inter", sans-serif;
-    color: #ffffff;
-    font-size: 1rem;
-    font-weight: 600;
-    background-color: black;
-    border: 1px solid white;
-    
-    /* border: 1px solid white; */
-    /* background-color: rgba(230, 83, 60, 1); */
-    /* background-color: #000000; */
-    
-    /* margin: 16px 40px; */
+.brand-button2 {
+  width: 224px;
+  height: 54px;
+  border-radius: 42px;
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: black;
+  border: 1px solid white;
+
+  /* border: 1px solid white; */
+  /* background-color: rgba(230, 83, 60, 1); */
+  /* background-color: #000000; */
+
+  /* margin: 16px 40px; */
 }
 
 @media screen and (max-width: 576px) {
