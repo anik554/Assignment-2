@@ -37,12 +37,13 @@ body {
 
 #banner-section {
   width: 100%;
-  height: auto;
-  /* background: linear-gradient(
+  height: 715px;
+  background: linear-gradient(
     to bottom,
     rgba(17, 17, 17, 1),
     rgba(119, 119, 119, 0)
-  ); */
+  );
+  /* border: 1px solid skyblue; */
 }
 .nav-section {
   display: flex;
@@ -226,8 +227,61 @@ body {
   /* margin: 16px 40px; */
 }
 
+/* Change you habits section */
+
+#habits-section{
+  width: 70%;
+  height: 492px;
+  /* border: 1px solid skyblue; */
+  margin: 0 auto;
+}
+.habit-title{
+  font-size: 3rem;
+  font-weight: 900;
+  color: #ffffff;
+  text-align: center;
+}
+.habit-description{
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  width: 671px;
+  margin: 18px auto;
+}
+.four-exercise{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-top: 60px;
+}
+.four-exercise img{
+  width: 100%;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.5); ;
+}
+.exercise-title{
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 30px;
+}
+.excrcise-description{
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  margin-top: 10px;
+}
+.fa-solid{
+  display: none;
+}
+
 @media screen and (max-width: 576px) {
-  
+  *{
+    overflow: hidden;
+  }
   .nav-section ul {
     display: none;
   }
