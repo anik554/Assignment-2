@@ -21,6 +21,8 @@
   font-weight: normal;
   src: url("../Fonts/Miama.woff");
 }
+
+
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -36,11 +38,11 @@ body {
 #banner-section {
   width: 100%;
   height: auto;
-  background: linear-gradient(
+  /* background: linear-gradient(
     to bottom,
     rgba(17, 17, 17, 1),
     rgba(119, 119, 119, 0)
-  );
+  ); */
 }
 .nav-section {
   display: flex;
@@ -134,18 +136,51 @@ body {
   border-radius: 50%;
   background-color: rgba(230, 83, 60, 1);
   position: relative;
+  
 }
 .box{
   color: #ffffff;
   width: 206px;
   height: 96;
-  background: rgba(48, 48, 48, 0.54);
-  margin: -150px 150px 0 950px;
+  background: linear-gradient(
+    rgba(48, 48, 48, 0.54), 
+    rgba(255, 255, 255, 0.1)
+  ), 
+  rgba(255, 255, 255, 0.1);
+  margin: -190px 270px 0 1150px;
+  display: flex;
   z-index: 1;
-  display: block;
+  position: relative;
   padding: 15px;
   border-radius: 12px;
-  display: flex;
+  align-items: center;
+  
+}
+.box2{
+  color: #ffffff;
+  width: 193px;
+  height: 98px;
+  background: linear-gradient(
+    rgba(48, 48, 48, 0.54), 
+    rgba(255, 255, 255, 0.1)
+  ), 
+  rgba(255, 255, 255, 0.1);
+  margin: -380px 270px 0 1500px;
+  z-index: 1;
+  position: relative;
+  padding: 15px;
+  border-radius: 12px;
+  
+}
+.work-video{
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.work-video-des{
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.5);
 }
 .title-section {
   width: 520px;
@@ -192,14 +227,52 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+  
   .nav-section ul {
     display: none;
   }
   .fa-solid {
     color: #ffffff;
     margin-top: 10px;
+    margin-right: 10px;
   }
   .nav-section {
     width: 90%;
+    border: 1px solid white;
+  }
+  .header-section{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+    border: 1px solid white;
+  }
+  .title-section{
+    width: 70%;
+    height: auto;
+    
+  }
+  .brand-title{
+    font-size: 3.25rem;
+    line-height: 50px;
+  }
+
+  .title-button{
+    display: flex;
+    justify-content: space-between;
+    /* width: 90%; */
+  }
+  .brand-title .font-miama{
+    font-size: 3.25rem;
+  }
+  .box{
+   display: none;
+  }
+  .box2{
+    display: none;
+  }
+  .image-section img{
+    width: 80%;
+    height: auto;
+    margin: 48px 0 0 0;
   }
 }
