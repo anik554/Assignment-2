@@ -1,0 +1,46 @@
+#trainings-exercises {
+  width: 70%;
+  height: auto;
+  margin: 58px auto;
+  /* border: 1px solid skyblue; */
+}
+/* .multi-trainings-exercises{
+    height: 40px;
+} */
+.trainings-exercises-title {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 900;
+}
+.trainings-exercises-description {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 5px;
+  margin-bottom: 30px;
+  width: 60%;
+  line-height: 20px;
+}
+.first-row{
+    display: grid;
+    grid-template-columns:  repeat(3, 25% 50%) auto;
+    overflow: hidden;
+}
+.first-row img{
+    width: 100%;
+    height: 100%;
+}
+.second-row{
+    display: grid;
+    grid-template-columns:  repeat(3, 40% 25%) auto;
+    overflow: hidden;
+}
+.second-row img{
+    width: 100%;
+    height: 100%;
+}
+.second-row > img > .exercise1{
+    position: relative;
+    z-index: 1;
+    background-color: linear-gradient(rgba(120,120,1,0.5));
+}
