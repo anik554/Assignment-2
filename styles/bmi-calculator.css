@@ -85,3 +85,21 @@ input::placeholder{
     padding: 10px;
     font-size: 1rem;
 }
+@media screen and (max-width: 576px) {
+    .bmi-head-fullwide{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .bmi-head{
+        width: 90%;
+        margin: 0;
+    }
+    .bmi-header-title{
+        font-size: 2rem;
+        width: 100%;
+    }
+    .bmi-description{
+        width: 100%;
+    }
+    
+}

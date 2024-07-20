@@ -22,36 +22,28 @@
   src: url("../Fonts/Miama.woff");
 }
 
-
-* {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-}
-
 body {
   background-color: #000000;
-  margin: 0;
   font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 #banner-section {
   width: 100%;
-  height: 715px;
+  height: 695px;
   background: linear-gradient(
     to bottom,
-    rgba(17, 17, 17, 1),
-    rgba(119, 119, 119, 0)
+    rgba(119, 119, 119, 0.2),
+    rgba(17, 17, 17, 1)
   );
-  /* border: 1px solid skyblue; */
 }
-.nav-section {
+#banner-section .nav-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 46px;
+  /* height: 46px; */
   width: 70%;
-  
 }
 .nav-section ul li {
   margin-left: 47px;
@@ -90,7 +82,7 @@ body {
 .common-width {
   /* width: 80%; */
   margin: 0 auto;
-  margin-top: 57px;
+  /* margin-top: 57px; */
 }
 .common-color {
   color: rgba(230, 83, 60, 1);
@@ -101,9 +93,9 @@ body {
   font-style: italic;
 }
 
-.bar-icons {
+/* .bar-icons {
   display: none;
-}
+} */
 .header-section {
   display: flex;
   width: 70%;
@@ -123,31 +115,24 @@ body {
   color: #ffffff;
   font-weight: 900;
   line-height: 80px;
-  font-family: "Inter", sans-serif;
   margin: 0px;
 }
 .image-section img {
   width: 100%;
-  height: 580px;
-  margin: 32px 24px;
 }
-.ball{
+.ball {
   height: 50px;
   width: 50px;
   border-radius: 50%;
   background-color: rgba(230, 83, 60, 1);
   position: relative;
-  
 }
-.box{
+.box {
   color: #ffffff;
   width: 206px;
   height: 96;
-  background: linear-gradient(
-    rgba(48, 48, 48, 0.54), 
-    rgba(255, 255, 255, 0.1)
-  ), 
-  rgba(255, 255, 255, 0.1);
+  background: linear-gradient(rgba(48, 48, 48, 0.54), rgba(255, 255, 255, 0.1)),
+    rgba(255, 255, 255, 0.1);
   margin: -190px 270px 0 1150px;
   display: flex;
   z-index: 1;
@@ -155,9 +140,8 @@ body {
   padding: 15px;
   border-radius: 12px;
   align-items: center;
-  
 }
-.box2{
+/* .box2{
   color: #ffffff;
   width: 193px;
   height: 98px;
@@ -172,12 +156,12 @@ body {
   padding: 15px;
   border-radius: 12px;
   
-}
-.work-video{
+} */
+.work-video {
   font-size: 2.5rem;
   font-weight: 900;
 }
-.work-video-des{
+.work-video-des {
   font-size: 0.8rem;
   letter-spacing: 1px;
   line-height: 20px;
@@ -206,8 +190,6 @@ body {
   font-weight: 700;
   border: none;
   background-color: rgba(230, 83, 60, 1);
-  font-family: "Inter", sans-serif;
-  /* margin: 16px 40px; */
 }
 .brand-button2 {
   width: 224px;
@@ -219,29 +201,23 @@ body {
   font-weight: 600;
   background-color: black;
   border: 1px solid white;
-
-  /* border: 1px solid white; */
-  /* background-color: rgba(230, 83, 60, 1); */
-  /* background-color: #000000; */
-
-  /* margin: 16px 40px; */
 }
 
 /* Change you habits section */
 
-#habits-section{
+#habits-section {
   width: 70%;
-  height: 492px;
+  height: auto;
   /* border: 1px solid skyblue; */
   margin: 0 auto;
 }
-.habit-title{
+.habit-title {
   font-size: 3rem;
   font-weight: 900;
   color: #ffffff;
   text-align: center;
 }
-.habit-description{
+.habit-description {
   font-size: 1rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.5);
@@ -249,95 +225,139 @@ body {
   width: 671px;
   margin: 18px auto;
 }
-.four-exercise{
+.four-exercise {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
   margin-top: 60px;
 }
-.four-exercise img{
+.four-exercise img {
   width: 100%;
   border-radius: 50%;
-  border: 5px solid rgba(255, 255, 255, 0.5); ;
+  border: 5px solid rgba(255, 255, 255, 0.5);
 }
-.exercise-title{
+.exercise-title {
   font-size: 1.2rem;
   font-weight: 600;
   color: #ffffff;
   text-align: center;
   margin-top: 30px;
 }
-.excrcise-description{
+.excrcise-description {
   font-size: 1rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
   margin-top: 10px;
 }
-.fa-solid{
+.line-bar {
+  display: none;
+}
+
+.small-device {
   display: none;
 }
 
 @media screen and (max-width: 576px) {
-  *{
-    overflow: hidden;
+  #banner-section {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(
+      to bottom,
+      rgba(119, 119, 119, 0.2),
+      rgba(17, 17, 17, 1)
+    );
   }
-  .nav-section ul {
+  #banner-section .nav-section {
+    width: 90%;
+  }
+  .list-items {
     display: none;
   }
   .fa-solid {
-    color: #ffffff;
-    margin-top: 10px;
-    margin-right: 10px;
+    color: #3fcd2c;
   }
-  .nav-section {
+  .header-section {
     width: 90%;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
-  .header-section{
+  .title-section {
+    width: auto;
+  }
+  .brand-title,
+  .font-miama {
+    font-size: 3rem;
+  }
+  .title-button {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
   }
-  .title-section{
-    width: 80%;
-    height: auto;
-    
-  }
-  .brand-title{
-    font-size: 3.25rem;
-    line-height: 50px;
+  .title-button {
+    display: none;
   }
 
-  .title-button{
-    display: flex;
-    justify-content: space-between;
+  .small-device .brand-button3 {
+    width: 100%;
+    height: 54px;
+    border-radius: 42px;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    background-color: rgba(230, 83, 60, 1);
   }
-  .brand-title .font-miama{
-    font-size: 3.25rem;
-    
+  .small-device .brand-button4 {
+    width: 100%;
+    height: 54px;
+    border-radius: 42px;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    background-color: rgba(230, 83, 60, 1);
   }
-  .box{
-   margin: -300px 30px;
-   width: 200px;
+  .image-section{
+    margin: 0 auto;
+    width: 90%;
   }
-  .box2{
-    margin: -340px 220px;
-    width: 190px;
-  }
-  .image-section img{
-    width: 80%;
+  #habits-section{
+    margin: 0 auto;
+    width: 90%;
     height: auto;
-    margin: 48px 0 0 0;
+  }
+  .habit-title{
+    font-size: 2rem;
+    font-weight: 900;
+    color: #ffffff;
+    text-align: center;
+  }
+  .habit-description {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    width: 90%;
+    margin: 15px auto;
+    flex-wrap: wrap;
   }
   .four-exercise{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     width: 90%;
-    grid-template-columns: repeat(1,1fr);
+    height: 100%;
+    margin: 0 auto;
+    
   }
-  .exercise-title{
-    font-size: 1rem;
+  .four-exercise img {
+    width: 50%;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    margin-left: 25%;
+    margin-right: 25%;
+
   }
-  .excrcise-description{
-    font-size: 0.5rem;
+  .excrcise-description {
+    margin-top: 5px;
   }
 }
