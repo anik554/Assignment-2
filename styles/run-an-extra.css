@@ -6,12 +6,13 @@
   padding: 40px;
   background-color: rgba(53, 52, 52,0.7);
   border-radius: 16px;
+  overflow: hidden;
 }
 #run-an-extra img {
   width: 100%;
-  /* height: 300px; */
   border-radius: 30px;
-  margin-left: 0;
+  margin: 0;
+  
 }
 #run-an-extra .run-title {
   color: #ffffff;
