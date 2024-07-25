@@ -19,28 +19,44 @@
   margin-bottom: 30px;
   width: 50%;
 }
-.first-row{
-    display: grid;
-    grid-template-columns:  repeat(3, 25% 50%) auto;
-    overflow: hidden;
+.first-row {
+  display: grid;
+  grid-template-columns: repeat(3, 25% 50%) auto;
+  overflow: hidden;
 }
-.first-row img{
-    width: 100%;
-    height: 100%;
+.first-row img, .second-row img {
+  width: 100%;
+  height: 100%;
 }
-.second-row{
-    display: grid;
-    grid-template-columns:  repeat(3, 40% 25%) auto;
-    overflow: hidden;
+.second-row {
+  display: grid;
+  grid-template-columns: repeat(3, 40% 25%) auto;
+  overflow: hidden;
 }
-.second-row img{
-    width: 100%;
-    height: 100%;
+
+.second-row > img > .exercise1 {
+  position: relative;
+  z-index: 1;
+  background-color: red;
+  filter: blur(50px);
+  object-fit: cover;
 }
-.second-row > img > .exercise1{
-    position: relative;
-    z-index: 1;
-    background-color: linear-gradient(rgba(120,120,1,0.5));
+.exercise-container{
+  position: relative;
+  text-align: left;
+  color: black;
+  line-height: 10px;
+}
+
+.exercise-container > .exercise1-title{
+  position: absolute;
+  bottom: 20px;
+  left: 16px;
+  backdrop-filter:  brightness(99%);
+  /* backdrop-filter: blur(8px) brightness(80%); */
+  z-index: 1;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 @media screen and (max-width: 576px) {
   #trainings-exercises {
@@ -54,8 +70,15 @@
   .trainings-exercises-title {
     font-size: 2rem;
   }
-   .second-row img .exercise3{
+  .multi-trainings-exercises > .first-row > .exercise3,
+  .exercise6 {
+    /* visibility: hidden; */
     display: none;
   }
- 
+  .first-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .second-row {
+    grid-template-columns: 45% auto repeat(2, 1fr);
+  }
 }

@@ -36,7 +36,7 @@
           <span class="line-bar"><i class="fa-solid fa-bars"></i></span>
         </div>
       </nav>
-      <header>
+      <section>
         <div class="header-section">
           <div class="title-section">
             <h1 class="brand-title">
@@ -48,30 +48,30 @@
             </p>
             <div class="title-button">
               <button class="brand-button1">Join Club Now!</button>&emsp;
+              <button class="brand-button3">Join Now!</button>&emsp;
               <button class="brand-button2">Download App</button>
-            </div>
-            <div class="small-device">
-              <button class="brand-button3">Join Now!</button>
-              <button class="brand-button4">Download App</button>
             </div>
           </div>
           <div class="image-section">
-            <img src="images/Images 2.png" alt="Man-Image"  />
+            <img src="images/Images 2.png" alt="Man-Image" />
           </div>
         </div>
-        <!-- <div class="box">
-          <div class="ball"></div>
-          &ensp;
-          <div>
-            <h1 class="work-video">350+</h1>
-            <p class="work-video-des">Video tutorial</p>
+        <section class="box-container">
+          <div class="box2">
+            <h1 class="counts-500">500+</h1>
+            <p class="workouts-video">Free Workouts Video</p>
           </div>
-        </div>
-        <div class="box2">
-            <h1 class="work-video">500+</h1>
-            <p class="work-video-des">Free Workout Videos</p>
-        </div> -->
-      </header>
+          <div class="box1">
+            <div class="ball"></div>
+            &ensp;
+            <div class="box1-line-height">
+              <h1 class="video-count">350+</h1>
+              <p class="tutorial-title">Video tutorial</p>
+            </div>
+          </div>
+          
+        </section>
+      </section>
     </header>
     <main>
       <section id="habits-section">
@@ -136,18 +136,29 @@
         </p>
         <div class="multi-trainings-exercises">
           <div class="first-row">
-            <img
-              class="exercise1"
-              src="images/exercise1.jpg"
-              alt="exercise1"
-            />
-            <img class="exercise2" src="images/exercise2.png" alt="exercise2" />
-            <img class="exercise3" src="images/exercise3.png" alt="exercise3" />
+            <div class="exercise-container">
+              <img class="exercise1" src="images/exercise1.jpg" alt="exercise1" />
+              <div class="exercise1-title">
+                <p>Leg Press: Working Cagal Excrcise</p>
+              </div>
+            </div>
+            <div class="exercise-container">
+              <img class="exercise2" src="images/exercise2.png" alt="exercise2" />
+              <div class="exercise2-title">
+                <p>Leg Press: Working Cagal Excrcise</p>
+              </div>
+            </div>
+            <div class="exercise-container">
+              <img class="exercise3" src="images/exercise3.png" alt="exercise3" />
+              <div class="exercise3-title">
+                <p>Leg Press: Working Cagal Excrcise</p>
+              </div>
+            </div>
           </div>
           <div class="second-row">
-            <img src="images/exercise4.png" alt="exercise4" />
-            <img src="images/exercise5.jpg" alt="exercise5" />
-            <img src="images/exercise6.jpg" alt="exercise6" />
+            <img class="exercise4" src="images/exercise4.png" alt="exercise4" />
+            <img class="exercise5" src="images/exercise5.jpg" alt="exercise5" />
+            <img class="exercise6" src="images/exercise6.jpg" alt="exercise6" />
           </div>
         </div>
       </section>
@@ -205,10 +216,10 @@
                 </div>
                 <div class="inputField">
                   <input type="text" placeholder="Age" />
-                  <input type="text" placeholder="Sex" />
+                  <select type="text" placeholder="Sex"> <option value="Sex">Sex</option> </select>
                 </div>
                 <div class="inputField2">
-                  <input type="text" placeholder="Select an activity factor" />
+                  <select type="text" placeholder="Select an activity factor"> <option class="option" value="Select an activity factor">Select an activity factor</option> </select>
                 </div>
                 <div>
                   <button class="brand-button1" type="submit">Calculate</button>
@@ -227,12 +238,49 @@
           </p>
         </div>
         <div class="team-images">
-          <img src="images/trainer1.png" alt="trainer1" />
-          <img src="images/trainer2.png" alt="trainer2" />
-          <img src="images/trainer3.png" alt="trainer3" />
-          <img src="images/trainer4.png" alt="trainer4" />
-          <img src="images/trainer5.png" alt="trainer5" />
-          <img src="images/trainer6.png" alt="trainer6" />
+          <div class="img-container">
+            <img class="trainer1" src="images/trainer1.png" alt="trainer1" />
+            <div class="text-leftBottom">
+              <h4 class="trainer-name">Jerome Bell</h4>
+              <p class="designation-trainer">Trainer</p>
+            </div>
+          </div>
+          <div class="img-container">
+            <img class="trainer2" src="images/trainer2.png" alt="trainer2" />
+            <div class="text-leftBottom">
+              <h4 class="trainer-name">Cameron Williamson</h4>
+              <p class="designation-trainer">Trainer</p>
+            </div>
+          </div>
+          <div class="img-container">
+            <img class="trainer3" src="images/trainer3.png" alt="trainer3" />
+            <div class="text-leftBottom">
+              <h4 class="trainer-name">Darrell Steward</h4>
+              <p class="designation-trainer">Trainer</p>
+            </div>
+          </div>
+          <div class="img-container">
+            <img class="trainer4" src="images/trainer4.png" alt="trainer4" />
+            <div class="text-leftBottom">
+              <h4 class="trainer-name">Dianne Russell</h4>
+              <p class="designation-trainer">Trainer</p>
+            </div>
+          </div>
+          <div class="img-container">
+            <img class="trainer5" src="images/trainer5.png" alt="trainer5" />
+            <div class="text-leftBottom">
+              <h4 class="trainer-name">Cody Fisher</h4>
+              <p class="designation-trainer">Trainer</p>
+            </div>
+          </div>
+          <div class="img-container">
+            <img class="trainer6" src="images/trainer6.png" alt="trainer6" />
+            <div class="text-leftBottom">
+              <h4 class="trainer-name">Theresa Webb</h4>
+              <p class="designation-trainer">Trainer</p>
+            </div>
+          </div>
+          
         </div>
       </section>
       <footer id="footer-section">
@@ -265,9 +313,7 @@
           </div>
         </div>
         <hr class="break-line" />
-        <div class="copyright-text">
-          <p>All right reserved @Fitness 2024</p>
-        </div>
+        <p class="copyright-text">All right reserved @Fitness 2024</p>
       </footer>
     </main>
   </body>
