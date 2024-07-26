@@ -6,12 +6,17 @@
 /* .multi-trainings-exercises{
     height: 40px;
 } */
-.trainings-exercises-title {
-  color: #ffffff;
-  font-size: 3rem;
-  font-weight: 900;
-  margin-bottom: 0;
+.exercise-container .exercise1{
+  background-color: rgba(6, 255, 210, 0.5);
+  z-index: 10px;
+
 }
+
+.trainings-exercises-title{
+  font-size: 2rem;
+  color: #ffffff;
+}
+
 .trainings-exercises-description {
   font-size: 1rem;
   font-weight: 400;
@@ -34,18 +39,108 @@
   overflow: hidden;
 }
 
-.second-row > img > .exercise1 {
+.exercise1-image {
   position: relative;
-  z-index: 1;
-  background-color: red;
-  filter: blur(50px);
-  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
+
 .exercise-container{
   position: relative;
   text-align: left;
   color: black;
   line-height: 10px;
+  overflow: hidden;
+}
+.exercise1-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(0.1px);
+}
+.exercise2-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(0.1px);
+}
+.exercise3-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(0.1px);
+}
+.exercise4-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(0.1px);
+}
+.exercise5-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(0.1px);
+}
+.exercise6-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(0.1px);
+}
+.exercise1-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(6, 255, 210, 0.5);
+  z-index: 1;
+}
+.exercise2-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.3);
+  z-index: 1;
+}
+.exercise3-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.exercise4-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.exercise5-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(66, 255, 0, 0.3);
+  z-index: 1;
+}
+.exercise6-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 71, 255, 0.3);
+  z-index: 1;
 }
 
 .exercise-container > .exercise1-title{
@@ -53,10 +148,60 @@
   bottom: 20px;
   left: 16px;
   backdrop-filter:  brightness(99%);
-  /* backdrop-filter: blur(8px) brightness(80%); */
   z-index: 1;
   font-size: 0.8rem;
   font-weight: bold;
+}
+.exercise-container > .exercise2-title{
+  position: absolute;
+  top: 10px;
+  left: 10%;
+  transform: translateX(-50%);
+  z-index: 2;
+  color: #fff;
+  font-size: 18px;
+  text-align: left;
+  font-size: 0.8rem;
+}
+.exercise-container > .exercise3-title{
+  position: absolute;
+  bottom: 20px;
+  left: 16px;
+  backdrop-filter:  brightness(99%);
+  z-index: 1;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.exercise-container > .exercise4-title{
+  position: absolute;
+  top: 20px;
+  right: 16px;
+  backdrop-filter:  brightness(99%);
+  z-index: 1;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.exercise-container > .exercise5-title{
+  position: absolute;
+  bottom: 20px;
+  left: 16px;
+  backdrop-filter:  brightness(99%);
+  z-index: 1;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.exercise-container > .exercise6-title{
+  position: absolute;
+  bottom: 20px;
+  left: 16px;
+  backdrop-filter:  brightness(99%);
+  z-index: 1;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #ffffff;
 }
 @media screen and (max-width: 576px) {
   #trainings-exercises {
@@ -64,16 +209,11 @@
     height: auto;
     margin: 58px auto;
   }
-  .multi-trainings-exercises{
-    /* margin: 0;
-    padding: 0;
-  } */
+
   .trainings-exercises-description {
     width: 90%;
   }
-  .trainings-exercises-title {
-    font-size: 2rem;
-  }
+
   .exercise3{
     display: none;
   }
@@ -88,9 +228,22 @@
     grid-template-columns: 45% auto repeat(2, 1fr);
     
   }
-  .first-row img, .second-row img{
-    width: 150% ;
-    height: 100%;
+  .exercise-container > .exercise1-title{
+    bottom: 5px;
+    left: 14px;
+    line-height: 15px;
   }
-}
+  .exercise-container > .exercise2-title{
+    left: 50px;
+  }
+  .exercise-container > .exercise4-title{
+    top: 90px;
+    left: 14px;
+    line-height: 15px;
+  }
+  .exercise-container > .exercise5-title{
+    top: 90px;
+    left: 14px;
+    line-height: 15px;
+  }
 }
