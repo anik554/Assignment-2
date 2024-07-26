@@ -64,21 +64,33 @@
     height: auto;
     margin: 58px auto;
   }
+  .multi-trainings-exercises{
+    /* margin: 0;
+    padding: 0;
+  } */
   .trainings-exercises-description {
     width: 90%;
   }
   .trainings-exercises-title {
     font-size: 2rem;
   }
-  .multi-trainings-exercises > .first-row > .exercise3,
-  .exercise6 {
-    /* visibility: hidden; */
+  .exercise3{
+    display: none;
+  }
+  .exercise6{
     display: none;
   }
   .first-row {
     grid-template-columns: repeat(2, 1fr);
+    display: inline-flex;
   }
   .second-row {
     grid-template-columns: 45% auto repeat(2, 1fr);
+    
   }
+  .first-row img, .second-row img{
+    width: 150% ;
+    height: 100%;
+  }
+}
 }

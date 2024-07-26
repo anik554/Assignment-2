@@ -238,7 +238,7 @@ body {
   font-size: 1rem;
   font-weight: 600;
   background-color: black;
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 1);
 }
 
 /* Change you habits section */
@@ -429,11 +429,19 @@ body {
     display: inline-block;
     color: #ffffff;
   }
+  .title-button{
+    display: flex;
+  }
   .title-button > .brand-button1 {
     display: none;
   }
   .title-button > .brand-button3 {
-    width: 100%;
-    border: 1px solid skyblue;
+    width: 45%;
+    display: inline;
+  }
+  .title-button > .brand-button2 {
+    width: 45%;
+    border: 1px solid rgba(255, 255, 255, 1);
+    display: inline;
   }
 }
